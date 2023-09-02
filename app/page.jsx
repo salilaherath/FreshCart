@@ -1,4 +1,61 @@
+import Image from "next/image";
+
+import img1 from "../public/1.jpeg";
+import img2 from "../public/2.jpeg";
+import img3 from "../public/3.jpeg";
+
 export default function Home() {
+  let categories = [
+    {
+      image: "cat1.jpeg",
+      name: "Dairy, Bread & Eggs",
+    },
+    {
+      image: "cat2.jpeg",
+      name: "Snack & Munchies",
+    },
+    {
+      image: "cat3.jpeg",
+      name: "Bakery & Biscuits",
+    },
+    {
+      image: "cat4.jpeg",
+      name: "Instant Food",
+    },
+    {
+      image: "cat5.jpeg",
+      name: "Tea, Coffee & Drinks",
+    },
+    {
+      image: "cat6.jpeg",
+      name: "Fruits & Vegetables",
+    },
+    {
+      image: "cat7.jpeg",
+      name: "Cold Drinks & Juices",
+    },
+    {
+      image: "cat8.jpeg",
+      name: "Chicken, Meat & Fish",
+    },
+    {
+      image: "cat9.jpeg",
+      name: "Baby Care",
+    },
+    {
+      image: "cat10.jpeg",
+      name: "Cleaning Essentials",
+    },
+    {
+      image: "cat11.jpeg",
+      name: "Pet Care",
+    },
+    {
+      image: "cat12.jpeg",
+      name: "Atta, Rice & Dal",
+    },
+  ];
+
   return (
     <div>
       {/* Header */}
@@ -477,6 +534,102 @@ export default function Home() {
 
           <div className="text-sm font-medium text-white bg-[#001E2B] rounded-md px-[17px] py-[9px]">
             Downlaod FreshCart App
+          </div>
+        </div>
+
+        {/* Section 2 */}
+        <div className="flex items-center justify-between mt-[32px] mb-[90px]">
+          <div
+            className="h-[250px] w-[400px] p-[32px] rounded-lg"
+            style={{
+              backgroundImage: `url(${img1.src})`,
+            }}
+          >
+            <p className="text-2xl font-bold w-[210px]">
+              10% cashback on personal care
+            </p>
+            <p className="mt-[16px] text-[#5C6C75]">Max cashback: $12</p>
+            <p className="text-[#5C6C75]">
+              Code: <span className="text-black font-bold">CARE12</span>
+            </p>
+            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center">
+              Shop Now
+            </div>
+          </div>
+
+          <div
+            className="h-[250px] w-[400px] p-[32px] rounded-lg"
+            style={{
+              backgroundImage: `url(${img2.src})`,
+            }}
+          >
+            <p className="text-2xl font-bold w-[210px]">
+              Say yes to season’s fresh
+            </p>
+            <p className="mt-[16px] text-[#5C6C75] w-[130px]">
+              Refresh your day the fruity way
+            </p>
+            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center">
+              Shop Now
+            </div>
+          </div>
+
+          <div
+            className="h-[250px] w-[400px] p-[32px] rounded-lg"
+            style={{
+              backgroundImage: `url(${img3.src})`,
+            }}
+          >
+            <p className="text-2xl font-bold w-[210px]">
+              When in doubt, eat ice cream
+            </p>
+            <p className="mt-[16px] text-[#5C6C75] w-[130px]">
+              Enjoy a scoop of summer today
+            </p>
+            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center">
+              Shop Now
+            </div>
+          </div>
+        </div>
+
+        {/* Section 3 */}
+        <p className="text-2xl font-bold mb-[32px]">Shop by Category</p>
+        <div className="grid grid-cols-6 gap-4 justify-between w-full mb-[80px]">
+          {categories.map((category) => {
+            return (
+              <div className="border border-[#DFE2E1] w-[190px] h-[220px] rounded-lg flex flex-col items-center justify-center gap-4">
+                <img src={category.image} alt="" />
+                <p className="text-[#5C6C75] font-medium text-md">
+                  {category.name}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Section 4 */}
+        <p className="text-2xl font-bold">Fruits & vegetables</p>
+        <p>eat fresh, stay healthy</p>
+
+        <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+          <img src="veg1.jpeg" />
+          <div className="w-full">
+            <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
+            <p className="font-medium text-md mb-[10px]">Beatroot</p>
+
+            <div className="flex items-center justify-start gap-2 mb-[10px]">
+              <img src="rating.png" alt="" className="w-24" />
+              <p className="text-[#5C6C75] text-md">4.5 (39)</p>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <p className="text-md font-medium">
+                $18 <span className="text-[#5C6C75] line-through">$24</span>
+              </p>
+              <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                + Add
+              </div>
+            </div>
           </div>
         </div>
       </div>
