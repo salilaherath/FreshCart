@@ -56,6 +56,53 @@ export default function Home() {
     },
   ];
 
+  let allCat = [
+    "Vegetables & Fruits",
+    "Breakfast & instant food",
+    "Bakery & Biscuits",
+    "Atta, rice & dal",
+    "Sauces & spreads",
+    "Organic & gourmet",
+    "Baby care",
+    "Cleaning essentials",
+    "Personal care",
+    "Dairy, bread & eggs",
+    "Cold drinks & juices",
+    "Tea, coffee & drinks",
+    "Masala, oil & more",
+    "Chicken, meat & fish",
+    "Paan corner",
+    "Pharma & wellness",
+    "Home & office",
+    "Pet care",
+  ];
+
+  let knowUs = ["Company", "About", "Blog", "Help Center", "Our Value"];
+
+  let programs = [
+    "Freshcart programs",
+    "Gift Cards",
+    "Promos & Coupons",
+    "Freshcart Ads",
+    "Careers",
+  ];
+
+  let consumers = [
+    "Payments",
+    "Shipping",
+    "Product Returns",
+    "FAQ",
+    "Shop Checkout",
+  ];
+
+  let shoppers = [
+    "Shopper Opportunities",
+    "Become a Shopper",
+    "Earnings",
+    "Ideas & Guides",
+    "New Retailers",
+  ];
+
   return (
     <div>
       {/* Header */}
@@ -609,27 +656,444 @@ export default function Home() {
 
         {/* Section 4 */}
         <p className="text-2xl font-bold">Fruits & vegetables</p>
-        <p>eat fresh, stay healthy</p>
+        <p className="mb-[20px]">eat fresh, stay healthy</p>
+        <div className="grid grid-cols-5 gap-2 mb-[80px]">
+          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+            <img src="veg1.jpeg" />
+            <div className="w-full">
+              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
+              <p className="font-medium text-md mb-[10px]">Beatroot</p>
 
-        <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
-          <img src="veg1.jpeg" />
-          <div className="w-full">
-            <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
-            <p className="font-medium text-md mb-[10px]">Beatroot</p>
+              <div className="flex items-center justify-start gap-2 mb-[10px]">
+                <img src="rating.png" alt="" className="w-24" />
+                <p className="text-[#5C6C75] text-md">4.5 (39)</p>
+              </div>
 
-            <div className="flex items-center justify-start gap-2 mb-[10px]">
-              <img src="rating.png" alt="" className="w-24" />
-              <p className="text-[#5C6C75] text-md">4.5 (39)</p>
-            </div>
-
-            <div className="flex items-center justify-between">
-              <p className="text-md font-medium">
-                $18 <span className="text-[#5C6C75] line-through">$24</span>
-              </p>
-              <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
-                + Add
+              <div className="flex items-center justify-between">
+                <p className="text-md font-medium">
+                  $18 <span className="text-[#5C6C75] line-through">$24</span>
+                </p>
+                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                  + Add
+                </div>
               </div>
             </div>
+          </div>
+
+          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+            <img src="veg2.jpeg" />
+            <div className="w-full">
+              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
+              <p className="font-medium text-md mb-[10px]">Fresh Apple</p>
+
+              <div className="flex items-center justify-start gap-2 mb-[10px]">
+                <img src="rating.png" alt="" className="w-24" />
+                <p className="text-[#5C6C75] text-md">4.5 (149)</p>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <p className="text-md font-medium">$24</p>
+                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                  + Add
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+            <img src="veg3.jpeg" />
+            <div className="w-full">
+              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
+              <p className="font-medium text-md mb-[10px]">Golden Pineapple</p>
+
+              <div className="flex items-center justify-start gap-2 mb-[10px]">
+                <img src="rating.png" alt="" className="w-24" />
+                <p className="text-[#5C6C75] text-md">4.5 (25)</p>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <p className="text-md font-medium">
+                  $32 <span className="text-[#5C6C75] line-through">$35</span>
+                </p>
+                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                  + Add
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+            <img src="veg4.jpeg" />
+            <div className="w-full">
+              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
+              <p className="font-medium text-md mb-[10px]">Fresh Kiwi</p>
+
+              <div className="flex items-center justify-start gap-2 mb-[10px]">
+                <img src="rating.png" alt="" className="w-24" />
+                <p className="text-[#5C6C75] text-md">5 (469)</p>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <p className="text-md font-medium">
+                  $3 <span className="text-[#5C6C75] line-through">$5</span>
+                </p>
+                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                  + Add
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+            <img src="veg5.jpeg" />
+            <div className="w-full">
+              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
+              <p className="font-medium text-md mb-[10px]">Fresh Banana</p>
+
+              <div className="flex items-center justify-start gap-2 mb-[10px]">
+                <img src="rating.png" alt="" className="w-24" />
+                <p className="text-[#5C6C75] text-md">3.5 (456)</p>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <p className="text-md font-medium">
+                  $13 <span className="text-[#5C6C75] line-through">$18</span>
+                </p>
+                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                  + Add
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 5 */}
+        <div className="h-auto w-full border-y border-[#DFE2E1] mb-[80px] py-[80px] grid grid-cols-2 gap-[80px]">
+          <div className="flex justify-end">
+            <img src="app.png" alt="" />
+          </div>
+          <div className="flex flex-col justify-center">
+            <p className="text-2xl font-semibold mb-[9px]">
+              Get the FreshCart app
+            </p>
+            <p className="text-[#5C6C75] font-medium mb-[28px]">
+              We will send you a link, open it on your phone to download the
+              app.
+            </p>
+            <div className="mb-[18px]">
+              <label className="text-[#5C6C75] mr-[24px]">
+                <input
+                  type="radio"
+                  name="myRadio"
+                  value="email"
+                  className="mr-[7px]"
+                />
+                Email
+              </label>
+              <label className="text-[#5C6C75]">
+                <input
+                  type="radio"
+                  name="myRadio"
+                  value="phone"
+                  className="mr-[7px]"
+                />
+                Phone
+              </label>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Phone"
+                className="py-[10px] px-[16px] rounded-lg border border-[#DFE2E1] text-[#889397] font-medium mr-[12px]"
+              />
+              <button className="py-[10px] px-[16px] bg-[#0AAD0A] rounded-lg border-none text-white font-medium">
+                Share app link
+              </button>
+            </div>
+
+            <p className="text-[#5C6C75] font-medium mt-[36px] mb-[12px] ">
+              Download app from
+            </p>
+            <div className="flex gap-4">
+              <img src="appstore-btn.svg" alt="" />
+              <img src="googleplay-btn.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        {/* Section 6 */}
+        <div className="flex gap-4 mb-[100px]">
+          <div className="w-1/4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+            >
+              <path
+                d="M20.0002 37.5267C29.2049 37.5267 36.6668 30.0648 36.6668 20.8601C36.6668 11.6553 29.2049 4.19336 20.0002 4.19336C10.7954 4.19336 3.3335 11.6553 3.3335 20.8601C3.3335 30.0648 10.7954 37.5267 20.0002 37.5267Z"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20 10.8599V20.8599L26.6667 24.1932"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p className="text-[#21313C] font-medium text-lg mt-[24px] mb-[12px]">
+              10 minute grocery now
+            </p>
+            <p className="text-[#5C6C75]">
+              Get your order delivered to your doorstep at the earliest from
+              pickup stores near you.
+            </p>
+          </div>
+
+          <div className="w-1/4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+            >
+              <path
+                d="M33.3332 20.8599V37.5266H6.6665V20.8599"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M36.6668 12.5264H3.3335V20.8597H36.6668V12.5264Z"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20 37.5264V12.5264"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.0002 12.5267H12.5002C11.3951 12.5267 10.3353 12.0877 9.55388 11.3063C8.77248 10.5249 8.3335 9.46509 8.3335 8.36002C8.3335 7.25495 8.77248 6.19515 9.55388 5.41374C10.3353 4.63234 11.3951 4.19336 12.5002 4.19336C18.3335 4.19336 20.0002 12.5267 20.0002 12.5267Z"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20 12.5267H27.5C28.6051 12.5267 29.6649 12.0877 30.4463 11.3063C31.2277 10.5249 31.6667 9.46509 31.6667 8.36002C31.6667 7.25495 31.2277 6.19515 30.4463 5.41374C29.6649 4.63234 28.6051 4.19336 27.5 4.19336C21.6667 4.19336 20 12.5267 20 12.5267Z"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p className="text-[#21313C] font-medium text-lg mt-[24px] mb-[12px]">
+              Best Prices & Offers
+            </p>
+            <p className="text-[#5C6C75]">
+              Cheaper prices than your local supermarket, great cashback offers
+              to top it off. Get best pricess & offers.
+            </p>
+          </div>
+
+          <div className="w-1/4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+            >
+              <path
+                d="M27.5 16.5265L12.5 7.87646"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M35 27.5267V14.1934C34.9994 13.6089 34.8451 13.0347 34.5526 12.5287C34.26 12.0226 33.8396 11.6023 33.3333 11.3101L21.6667 4.64337C21.1599 4.3508 20.5851 4.19678 20 4.19678C19.4149 4.19678 18.8401 4.3508 18.3333 4.64337L6.66667 11.3101C6.16044 11.6023 5.73997 12.0226 5.44744 12.5287C5.1549 13.0347 5.0006 13.6089 5 14.1934V27.5267C5.0006 28.1113 5.1549 28.6854 5.44744 29.1915C5.73997 29.6975 6.16044 30.1178 6.66667 30.4101L18.3333 37.0767C18.8401 37.3693 19.4149 37.5233 20 37.5233C20.5851 37.5233 21.1599 37.3693 21.6667 37.0767L33.3333 30.4101C33.8396 30.1178 34.26 29.6975 34.5526 29.1915C34.8451 28.6854 34.9994 28.1113 35 27.5267Z"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.4502 12.46L20.0002 20.8767L34.5502 12.46"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20 37.6599V20.8599"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p className="text-[#21313C] font-medium text-lg mt-[24px] mb-[12px]">
+              Wide Assortment
+            </p>
+            <p className="text-[#5C6C75]">
+              Choose from 5000+ products across food, personal care, household,
+              bakery, veg and non-veg & other categories.
+            </p>
+          </div>
+
+          <div className="w-1/4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+            >
+              <path
+                d="M38.3335 7.52637V17.5264H28.3335"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.6665 34.1934V24.1934H11.6665"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.84984 15.8599C6.69512 13.4712 8.13173 11.3355 10.0256 9.65219C11.9195 7.96888 14.2089 6.79276 16.6803 6.23359C19.1517 5.67441 21.7244 5.75039 24.1585 6.45445C26.5925 7.1585 28.8086 8.46768 30.5998 10.2598L38.3332 17.5265M1.6665 24.1932L9.39984 31.4599C11.1911 33.252 13.4071 34.5612 15.8412 35.2652C18.2752 35.9693 20.848 36.0453 23.3194 35.4861C25.7907 34.9269 28.0802 33.7508 29.9741 32.0675C31.8679 30.3842 33.3046 28.2486 34.1498 25.8599"
+                stroke="#0AAD0A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p className="text-[#21313C] font-medium text-lg mt-[24px] mb-[12px]">
+              Easy Returns
+            </p>
+            <p className="text-[#5C6C75]">
+              Not satisfied with a product? Return it at the doorstep & get a
+              refund within hours. No questions asked{" "}
+              <span className="text-[#0AAD0A]">policy.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* Footer */}
+      <div className="bg-[#F0F3F2] px-[300px] py-[50px]  ">
+        <div className="flex gap-20">
+          <div>
+            <p className="font-medium text-sm mb-[9px]">Categories</p>
+            <ul className="columns-2 gap-16">
+              {allCat.map((cat) => {
+                return (
+                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
+                    {cat}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium text-sm mb-[9px]">Get to know us</p>
+            <ul>
+              {knowUs.map((know) => {
+                return (
+                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
+                    {know}
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="font-medium text-sm mb-[9px] mt-[16px]">
+              Freshcart programs
+            </p>
+            <ul>
+              {programs.map((program) => {
+                return (
+                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
+                    {program}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium text-sm mb-[9px]">For Consumers</p>
+            <ul>
+              {consumers.map((consumer) => {
+                return (
+                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
+                    {consumer}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium text-sm mb-[9px]">Become a Shopper</p>
+            <ul>
+              {shoppers.map((shopper) => {
+                return (
+                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
+                    {shopper}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+        <div className="border-y border-[#DFE2E1] flex justify-between items-center py-[20px]">
+          <div className="flex gap-2 items-center">
+            <p className="text-sm font-medium">Payment Partners</p>
+            <img src="amazonpay.svg" alt="" />
+            <img src="american-express.svg" alt="" />
+            <img src="mastercard.svg" alt="" />
+            <img src="paypal.svg" alt="" />
+            <img src="visa.svg" alt="" />
+          </div>
+          <div className="flex gap-2 items-center">
+            <p className="text-sm font-medium">Get deliveries with FreshCart</p>
+            <img src="appstore-btn.svg" alt="" />
+            <img src="googleplay-btn.svg" alt="" />
+          </div>
+        </div>
+        <div className="flex justify-between items-center mt-[20px]">
+          <p className="text-[#5C6C75] text-sm">© 2023. All rights reserved.</p>
+
+          <div className="flex gap-2 items-center">
+            <p className="text-[#5C6C75] text-sm">Follow us on</p>
+            <img
+              className="border border-[#889397] rounded-lg p-1"
+              src="Facebook.svg"
+              alt=""
+            />
+            <img
+              className="border border-[#889397] rounded-lg p-1"
+              src="Twitter.svg"
+              alt=""
+            />
+            <img
+              className="border border-[#889397] rounded-lg p-1"
+              src="Instagram.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
