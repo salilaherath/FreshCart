@@ -849,8 +849,8 @@ export default function Home() {
         </div>
 
         {/* Section 6 */}
-        <div className="flex gap-4 mb-[100px]">
-          <div className="w-1/4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 mb-[100px]">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -882,7 +882,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-1/4">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -935,7 +935,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-1/4">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -981,7 +981,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-1/4">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
