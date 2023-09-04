@@ -104,12 +104,13 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="w-full">
       {/* Header */}
       <div className="flex items-center justify-between px-[16px] my-[20px]">
         <div className=" flex items-center justify-center">
-          <div className="h-[40px] w-[340px] flex flex-auto items-center justify-between px-[17px] border border-neutral-200 rounded-bl-lg rounded-tl-lg text-sm font-medium">
-            All Categories
+          <div className="h-[40px] w-[50px] lg:w-[340px] flex flex-auto items-center justify-between px-[8px] lg:px-[17px] border border-neutral-200 rounded-bl-lg rounded-tl-lg text-xs lg:text-sm font-medium cursor-pointer">
+            <span className="hidden lg:flex">All Categories</span>
+            <span className="lg:hidden">All</span>
             <svg
               width="11"
               height="7"
@@ -126,10 +127,13 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="h-[40px] w-[800px] flex items-center justify-start border border-neutral-200 px-[17px] text-sm text-neutral-400">
-            Search for products
+
+          <div className="h-[40px] w-[100px] lg:w-[800px] flex items-center justify-start border border-neutral-200 px-[17px] text-sm text-neutral-400">
+            <span className="hidden lg:flex">Search for products</span>
+            <span className="lg:hidden">Search</span>
           </div>
-          <div className="h-[40px] w-[50px] flex flex-auto items-center justify-center border border-neutral-200 rounded-br-lg rounded-tr-lg">
+
+          <div className="h-[40px] w-[30px] lg:w-[50px] flex flex-auto items-center justify-center border border-neutral-200 rounded-br-lg rounded-tr-lg cursor-pointer">
             <svg
               width="16"
               height="17"
@@ -154,7 +158,8 @@ export default function Home() {
             </svg>
           </div>
         </div>
-        <div className="h-[40px] w-[140px] flex items-center justify-center gap-2 px-2 border border-neutral-200 rounded-lg ">
+
+        <div className="h-[40px] w-[40px] lg:w-[140px] flex items-center justify-center gap-2 px-2 border border-neutral-200 rounded-lg cursor-pointer">
           <svg
             width="12"
             height="14"
@@ -167,11 +172,12 @@ export default function Home() {
               fill="#5C6C75"
             />
           </svg>
-          <div className="text-neutral-400 text-sm font-medium">
+          <span className="hidden lg:flex text-neutral-400 text-sm font-medium">
             Pick Location
-          </div>
+          </span>
         </div>
-        <div className="h-[40px] w-[105px] flex items-center justify-between">
+
+        <div className="h-[40px] w-[105px] flex items-center justify-between cursor-pointer">
           <svg
             width="20"
             height="18"
@@ -257,7 +263,7 @@ export default function Home() {
 
       {/* Nav */}
       <div className="w-full h-[50px] bg-green-600 px-[40px] py-[8px] flex items-center justify-start gap-4 text-white text-sm">
-        <div className="flex items-center justify-center font-medium gap-2 mr-4">
+        <div className="flex items-center justify-center font-medium gap-2 mr-4 cursor-pointer">
           <svg
             width="16"
             height="17"
@@ -294,10 +300,11 @@ export default function Home() {
               stroke-linejoin="round"
             />
           </svg>
-          All Departments
+          <span className="hidden lg:flex">All Departments</span>
+          <span className="lg:hidden">All</span>
         </div>
 
-        <div className="flex items-center justify-start gap-2">
+        <div className="flex items-center justify-start gap-2 cursor-pointer">
           Home
           <svg
             width="9"
@@ -313,7 +320,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="flex items-center justify-start gap-2">
+        <div className="flex items-center justify-start gap-2 cursor-pointer">
           Shop
           <svg
             width="9"
@@ -329,7 +336,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="flex items-center justify-start gap-2">
+        <div className="flex items-center justify-start gap-2 cursor-pointer">
           Stores
           <svg
             width="9"
@@ -345,7 +352,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="flex items-center justify-start gap-2">
+        <div className="hidden lg:flex items-center justify-start gap-2 cursor-pointer">
           Mega menu
           <svg
             width="9"
@@ -361,7 +368,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="flex items-center justify-start gap-2">
+        <div className="hidden lg:flex items-center justify-start gap-2 cursor-pointer">
           Pages
           <svg
             width="9"
@@ -377,7 +384,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="flex items-center justify-start gap-2">
+        <div className="hidden lg:flex items-center justify-start gap-2 cursor-pointer">
           Account
           <svg
             width="9"
@@ -393,16 +400,16 @@ export default function Home() {
           </svg>
         </div>
 
-        <div>Dashboard</div>
+        <div className="hidden lg:flex cursor-pointer">Dashboard</div>
 
-        <div>Docs</div>
+        <div className="hidden lg:flex cursor-pointer">Docs</div>
       </div>
 
       {/* Body Content*/}
-      <div className="mx-[300px] mt-[32px] ">
+      <div className="mx-[40px] lg:mx-[300px] mt-[32px] ">
         {/* Section 1 */}
-        <div className="w-full h-auto px-[32px] bg-[#F0F3F2] rounded-lg flex items-center justify-between">
-          <div className="flex items-center">
+        <div className="w-full h-auto px-[6px] lg:px-[32px] bg-[#F0F3F2] rounded-lg flex items-center justify-between gap-2">
+          <div className="flex items-center ">
             <svg
               width="120"
               height="121"
@@ -570,24 +577,24 @@ export default function Home() {
             </svg>
 
             <div>
-              <p className="font-medium text-2xl">Welcome !</p>
+              <p className="font-medium lg:text-2xl">Welcome !</p>
               <p className="text-sm text-[#5C6C75]">
                 Download the app get free food &{" "}
-                <span className="text-[#0AAD0A]">$30</span> off on your first
-                order.
+                <span className="text-[#0AAD0A] cursor-pointer">$30</span> off
+                on your first order.
               </p>
             </div>
           </div>
 
-          <div className="text-sm font-medium text-white bg-[#001E2B] rounded-md px-[17px] py-[9px]">
+          <div className="text-xs lg:text-sm font-medium text-white bg-[#001E2B] rounded-md px-[4px] lg:px-[17px] py-[9px] text-center cursor-pointer">
             Downlaod FreshCart App
           </div>
         </div>
 
         {/* Section 2 */}
-        <div className="flex items-center justify-between mt-[32px] mb-[90px]">
+        <div className="lg:flex lg:items-center lg:justify-between mt-[32px] mb-[32px] lg:mb-[90px]">
           <div
-            className="h-[250px] w-[400px] p-[32px] rounded-lg"
+            className="lg:h-[250px] lg:w-[400px] p-[32px] rounded-lg mb-4 lg:mb-0"
             style={{
               backgroundImage: `url(${img1.src})`,
             }}
@@ -599,13 +606,13 @@ export default function Home() {
             <p className="text-[#5C6C75]">
               Code: <span className="text-black font-bold">CARE12</span>
             </p>
-            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center">
+            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center cursor-pointer">
               Shop Now
             </div>
           </div>
 
           <div
-            className="h-[250px] w-[400px] p-[32px] rounded-lg"
+            className="lg:h-[250px] lg:w-[400px] p-[32px] rounded-lg mb-4 lg:mb-0"
             style={{
               backgroundImage: `url(${img2.src})`,
             }}
@@ -616,13 +623,13 @@ export default function Home() {
             <p className="mt-[16px] text-[#5C6C75] w-[130px]">
               Refresh your day the fruity way
             </p>
-            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center">
+            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center cursor-pointer">
               Shop Now
             </div>
           </div>
 
           <div
-            className="h-[250px] w-[400px] p-[32px] rounded-lg"
+            className="lg:h-[250px] lg:w-[400px] p-[32px] rounded-lg"
             style={{
               backgroundImage: `url(${img3.src})`,
             }}
@@ -633,7 +640,7 @@ export default function Home() {
             <p className="mt-[16px] text-[#5C6C75] w-[130px]">
               Enjoy a scoop of summer today
             </p>
-            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center">
+            <div className="mt-[20px] text-white text-sm font-medium py-[9px] px-[17px] bg-black rounded-lg w-[110px] text-center cursor-pointer">
               Shop Now
             </div>
           </div>
@@ -641,12 +648,12 @@ export default function Home() {
 
         {/* Section 3 */}
         <p className="text-2xl font-bold mb-[32px]">Shop by Category</p>
-        <div className="grid grid-cols-6 gap-4 justify-between w-full mb-[80px]">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 justify-between w-full mb-[80px]">
           {categories.map((category) => {
             return (
-              <div className="border border-[#DFE2E1] w-[190px] h-[220px] rounded-lg flex flex-col items-center justify-center gap-4">
+              <div className="border border-[#DFE2E1] lg:w-[190px] lg:h-[220px] rounded-lg flex flex-col items-center justify-center gap-4 cursor-pointer">
                 <img src={category.image} alt="" />
-                <p className="text-[#5C6C75] font-medium text-md">
+                <p className="text-[#5C6C75] font-medium text-md text-center">
                   {category.name}
                 </p>
               </div>
@@ -657,109 +664,129 @@ export default function Home() {
         {/* Section 4 */}
         <p className="text-2xl font-bold">Fruits & vegetables</p>
         <p className="mb-[20px]">eat fresh, stay healthy</p>
-        <div className="grid grid-cols-5 gap-2 mb-[80px]">
-          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-2 mb-[80px] ">
+          <div className="border border-[#DFE2E1] lg:w-[245px] lg:h-[370px] rounded-lg flex flex-col items-start gap-4 px-2 lg:px-[17px] cursor-pointer">
             <img src="veg1.jpeg" />
             <div className="w-full">
-              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
-              <p className="font-medium text-md mb-[10px]">Beatroot</p>
+              <p className="text-[#5C6C75] text-xs lg:text-sm">
+                Fruits & Vegetables
+              </p>
+              <p className="font-medium text-sm lg:text-md mb-[10px]">
+                Beatroot
+              </p>
 
               <div className="flex items-center justify-start gap-2 mb-[10px]">
-                <img src="rating.png" alt="" className="w-24" />
-                <p className="text-[#5C6C75] text-md">4.5 (39)</p>
+                <img src="rating.png" alt="" className="w-16 lg:w-24" />
+                <p className="text-[#5C6C75] text-xs lg:text-md">4.5 (39)</p>
               </div>
 
               <div className="flex items-center justify-between">
                 <p className="text-md font-medium">
                   $18 <span className="text-[#5C6C75] line-through">$24</span>
                 </p>
-                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                <div className="bg-[#0AAD0A] py-[2px] px-[4px] lg:py-[7px] lg:px-[9px] rounded-lg text-white font-medium text-center">
                   + Add
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+          <div className="border border-[#DFE2E1] lg:w-[245px] lg:h-[370px] rounded-lg flex flex-col items-start gap-4 px-2 lg:px-[17px] cursor-pointer">
             <img src="veg2.jpeg" />
             <div className="w-full">
-              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
-              <p className="font-medium text-md mb-[10px]">Fresh Apple</p>
+              <p className="text-[#5C6C75] text-xs lg:text-sm">
+                Fruits & Vegetables
+              </p>
+              <p className="font-medium text-sm lg:text-md mb-[10px]">
+                Fresh Apple
+              </p>
 
               <div className="flex items-center justify-start gap-2 mb-[10px]">
-                <img src="rating.png" alt="" className="w-24" />
-                <p className="text-[#5C6C75] text-md">4.5 (149)</p>
+                <img src="rating.png" alt="" className="w-16 lg:w-24" />
+                <p className="text-[#5C6C75] text-xs lg:text-md">4.5 (149)</p>
               </div>
 
               <div className="flex items-center justify-between">
                 <p className="text-md font-medium">$24</p>
-                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                <div className="bg-[#0AAD0A] py-[2px] px-[4px] lg:py-[7px] lg:px-[9px] rounded-lg  text-white font-medium text-center">
                   + Add
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+          <div className="border border-[#DFE2E1] lg:w-[245px] lg:h-[370px] rounded-lg flex flex-col items-start gap-4 px-2 lg:px-[17px] cursor-pointer">
             <img src="veg3.jpeg" />
             <div className="w-full">
-              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
-              <p className="font-medium text-md mb-[10px]">Golden Pineapple</p>
+              <p className="text-[#5C6C75] text-xs lg:text-sm">
+                Fruits & Vegetables
+              </p>
+              <p className="font-medium text-sm lg:text-md mb-[10px]">
+                Golden Pineapple
+              </p>
 
               <div className="flex items-center justify-start gap-2 mb-[10px]">
-                <img src="rating.png" alt="" className="w-24" />
-                <p className="text-[#5C6C75] text-md">4.5 (25)</p>
+                <img src="rating.png" alt="" className="w-16 lg:w-24" />
+                <p className="text-[#5C6C75] text-xs lg:text-md">4.5 (25)</p>
               </div>
 
               <div className="flex items-center justify-between">
                 <p className="text-md font-medium">
                   $32 <span className="text-[#5C6C75] line-through">$35</span>
                 </p>
-                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                <div className="bg-[#0AAD0A] py-[2px] px-[4px] lg:py-[7px] lg:px-[9px] rounded-lg  text-white font-medium text-center">
                   + Add
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+          <div className="border border-[#DFE2E1] lg:w-[245px] lg:h-[370px] rounded-lg flex flex-col items-start gap-4 px-2 lg:px-[17px] cursor-pointer">
             <img src="veg4.jpeg" />
             <div className="w-full">
-              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
-              <p className="font-medium text-md mb-[10px]">Fresh Kiwi</p>
+              <p className="text-[#5C6C75] text-xs lg:text-sm">
+                Fruits & Vegetables
+              </p>
+              <p className="font-medium text-sm lg:text-md mb-[10px]">
+                Fresh Kiwi
+              </p>
 
               <div className="flex items-center justify-start gap-2 mb-[10px]">
-                <img src="rating.png" alt="" className="w-24" />
-                <p className="text-[#5C6C75] text-md">5 (469)</p>
+                <img src="rating.png" alt="" className="w-16 lg:w-24" />
+                <p className="text-[#5C6C75] text-xs lg:text-md">5 (469)</p>
               </div>
 
               <div className="flex items-center justify-between">
                 <p className="text-md font-medium">
                   $3 <span className="text-[#5C6C75] line-through">$5</span>
                 </p>
-                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                <div className="bg-[#0AAD0A] py-[2px] px-[4px] lg:py-[7px] lg:px-[9px] rounded-lg  text-white font-medium text-center">
                   + Add
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="border border-[#DFE2E1] w-[245px] h-[370px] rounded-lg flex flex-col items-start gap-4 px-[17px]">
+          <div className="border border-[#DFE2E1] lg:w-[245px] lg:h-[370px] rounded-lg flex flex-col items-start gap-4 px-2 lg:px-[17px] cursor-pointer">
             <img src="veg5.jpeg" />
             <div className="w-full">
-              <p className="text-[#5C6C75] text-sm">Fruits & Vegetables</p>
-              <p className="font-medium text-md mb-[10px]">Fresh Banana</p>
+              <p className="text-[#5C6C75] text-xs lg:text-sm">
+                Fruits & Vegetables
+              </p>
+              <p className="font-medium text-sm lg:text-md mb-[10px]">
+                Fresh Banana
+              </p>
 
               <div className="flex items-center justify-start gap-2 mb-[10px]">
-                <img src="rating.png" alt="" className="w-24" />
-                <p className="text-[#5C6C75] text-md">3.5 (456)</p>
+                <img src="rating.png" alt="" className="w-16 lg:w-24" />
+                <p className="text-[#5C6C75] text-xs lg:text-md">3.5 (456)</p>
               </div>
 
               <div className="flex items-center justify-between">
                 <p className="text-md font-medium">
                   $13 <span className="text-[#5C6C75] line-through">$18</span>
                 </p>
-                <div className="bg-[#0AAD0A] py-[7px] px-[9px] rounded-lg  text-white font-medium text-center">
+                <div className="bg-[#0AAD0A] py-[2px] px-[4px] lg:py-[7px] lg:px-[9px] rounded-lg  text-white font-medium text-center">
                   + Add
                 </div>
               </div>
@@ -768,7 +795,7 @@ export default function Home() {
         </div>
 
         {/* Section 5 */}
-        <div className="h-auto w-full border-y border-[#DFE2E1] mb-[80px] py-[80px] grid grid-cols-2 gap-[80px]">
+        <div className="h-auto w-full border-y border-[#DFE2E1] mb-[80px] py-[80px] lg:grid lg:grid-cols-2 lg:gap-[80px]">
           <div className="flex justify-end">
             <img src="app.png" alt="" />
           </div>
@@ -804,7 +831,7 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Phone"
-                className="py-[10px] px-[16px] rounded-lg border border-[#DFE2E1] text-[#889397] font-medium mr-[12px]"
+                className="py-[10px] px-[16px] rounded-lg border border-[#DFE2E1] text-[#889397] font-medium w-full lg:w-[300px] lg:mr-[12px] mb-4 lg:mb-0"
               />
               <button className="py-[10px] px-[16px] bg-[#0AAD0A] rounded-lg border-none text-white font-medium">
                 Share app link
@@ -814,7 +841,7 @@ export default function Home() {
             <p className="text-[#5C6C75] font-medium mt-[36px] mb-[12px] ">
               Download app from
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 cursor-pointer">
               <img src="appstore-btn.svg" alt="" />
               <img src="googleplay-btn.svg" alt="" />
             </div>
@@ -996,103 +1023,100 @@ export default function Home() {
         </div>
       </div>
       {/* Footer */}
-      <div className="bg-[#F0F3F2] px-[300px] py-[50px]  ">
-        <div className="flex gap-20">
-          <div>
-            <p className="font-medium text-sm mb-[9px]">Categories</p>
-            <ul className="columns-2 gap-16">
-              {allCat.map((cat) => {
-                return (
-                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
-                    {cat}
-                  </li>
-                );
-              })}
+      <div className="bg-[#F0F3F2] px-4 lg:px-[300px] py-6">
+        <div className="lg:flex lg:gap-[80px]">
+          <div className="mb-6 lg:mb-0">
+            <p className="font-medium text-sm mb-2">Categories</p>
+            <ul className="text-[#5C6C75] columns-2 text-sm space-y-2">
+              {allCat.map((cat) => (
+                <li className="cursor-pointer">{cat}</li>
+              ))}
             </ul>
           </div>
-          <div>
-            <p className="font-medium text-sm mb-[9px]">Get to know us</p>
-            <ul>
-              {knowUs.map((know) => {
-                return (
-                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
-                    {know}
-                  </li>
-                );
-              })}
-            </ul>
-            <p className="font-medium text-sm mb-[9px] mt-[16px]">
-              Freshcart programs
+          <div className="mb-6 lg:mb-0 grid grid-cols-2 lg:grid-cols-1 gap-4">
+            <div>
+              <p className="font-medium text-sm mb-2">Get to know us</p>
+              <ul className="text-[#5C6C75] text-sm space-y-2">
+                {knowUs.map((know) => (
+                  <li className="cursor-pointer">{know}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium text-sm mb-2">Freshcart programs</p>
+              <ul className="text-[#5C6C75] text-sm space-y-2">
+                {programs.map((program) => (
+                  <li className="cursor-pointer">{program}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="mb-6 lg:mb-0">
+              <p className="font-medium text-sm mb-2">For Consumers</p>
+              <ul className="text-[#5C6C75] text-sm space-y-2">
+                {consumers.map((consumer) => (
+                  <li className="cursor-pointer">{consumer}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium text-sm mb-2">Become a Shopper</p>
+              <ul className="text-[#5C6C75] text-sm space-y-2">
+                {shoppers.map((shopper) => (
+                  <li className="cursor-pointer">{shopper}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-[#DFE2E1] flex flex-col lg:flex-row justify-between items-center py-4">
+          <div className="flex flex-col lg:flex-row gap-2 items-center mb-2 lg:mb-0">
+            <p className="text-sm font-medium mb-2 lg:mb-0">Payment Partners</p>
+            <div className="flex gap-4">
+              <img src="amazonpay.svg" alt="" className="mb-2 lg:mb-0" />
+              <img src="american-express.svg" alt="" className="mb-2 lg:mb-0" />
+              <img src="mastercard.svg" alt="" className="mb-2 lg:mb-0" />
+              <img src="paypal.svg" alt="" className="mb-2 lg:mb-0" />
+              <img src="visa.svg" alt="" className="mb-2 lg:mb-0" />
+            </div>
+          </div>
+          <div className="flex flex-col lg:flex-row gap-2 items-center">
+            <p className="text-sm font-medium mb-2 lg:mb-0">
+              Get deliveries with FreshCart
             </p>
-            <ul>
-              {programs.map((program) => {
-                return (
-                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
-                    {program}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <div>
-            <p className="font-medium text-sm mb-[9px]">For Consumers</p>
-            <ul>
-              {consumers.map((consumer) => {
-                return (
-                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
-                    {consumer}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <div>
-            <p className="font-medium text-sm mb-[9px]">Become a Shopper</p>
-            <ul>
-              {shoppers.map((shopper) => {
-                return (
-                  <li className="text-[#5C6C75] text-sm mb-[7px] cursor-pointer">
-                    {shopper}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-        <div className="border-y border-[#DFE2E1] flex justify-between items-center py-[20px]">
-          <div className="flex gap-2 items-center">
-            <p className="text-sm font-medium">Payment Partners</p>
-            <img src="amazonpay.svg" alt="" />
-            <img src="american-express.svg" alt="" />
-            <img src="mastercard.svg" alt="" />
-            <img src="paypal.svg" alt="" />
-            <img src="visa.svg" alt="" />
-          </div>
-          <div className="flex gap-2 items-center">
-            <p className="text-sm font-medium">Get deliveries with FreshCart</p>
-            <img src="appstore-btn.svg" alt="" />
-            <img src="googleplay-btn.svg" alt="" />
-          </div>
-        </div>
-        <div className="flex justify-between items-center mt-[20px]">
-          <p className="text-[#5C6C75] text-sm">© 2023. All rights reserved.</p>
-
-          <div className="flex gap-2 items-center">
-            <p className="text-[#5C6C75] text-sm">Follow us on</p>
             <img
-              className="border border-[#889397] rounded-lg p-1"
+              src="appstore-btn.svg"
+              alt=""
+              className="mb-2 lg:mb-0 cursor-pointer"
+            />
+            <img
+              src="googleplay-btn.svg"
+              alt=""
+              className="mb-2 lg:mb-0 cursor-pointer"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-between items-center mt-4">
+          <p className="text-[#5C6C75] text-sm mb-2 lg:mb-0">
+            © 2023. All rights reserved.
+          </p>
+          <div className="flex gap-2 items-center">
+            <p className="text-[#5C6C75] text-sm mb-2 lg:mb-0">Follow us on</p>
+            <img
               src="Facebook.svg"
               alt=""
+              className="border border-[#889397] rounded-lg p-1"
             />
             <img
-              className="border border-[#889397] rounded-lg p-1"
               src="Twitter.svg"
               alt=""
+              className="border border-[#889397] rounded-lg p-1"
             />
             <img
-              className="border border-[#889397] rounded-lg p-1"
               src="Instagram.svg"
               alt=""
+              className="border border-[#889397] rounded-lg p-1"
             />
           </div>
         </div>
